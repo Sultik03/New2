@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image map</title>
+<style>
+h1 {
+	font-family: courier;
+	color: #603f1f;
+}
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width: 650px;
+  height: 410px; 
+  float:left;
+}
+p {
+	font-size: 230%;
+	padding: 15px 55px;
+	font-family: courier;
+	color: #603f1f;
+}
+</style>
+</head>
+<body>
+	<h1 align="center">Image map testing</h1>
+	
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <img src="desk.jpg" alt="desk" style="width:600px; height:410px;" usemap="#workmap">
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <p>Нажмите на <b>кофе</b> или на <b>телефон</b>, чтобы узнать о них подробнее</p>
+  </div>
+
+<map name="workmap">
+	<area shape="poly" coords="405,239,464,276,382,406,322,366" 
+href="https://ru.wikipedia.org/wiki/IPhone_6" target="_blank">
+	<area shape="circle" coords="302,82,72"
+href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+</map>
+
+</div>
+</body>
+</html>
